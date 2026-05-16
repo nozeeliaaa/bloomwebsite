@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./assets/images/bloom-logo.png?v=2">
+  <link rel="shortcut icon" type="image/png" href="./assets/images/bloom-logo.png?v=2">
+  <link rel="apple-touch-icon" href="./assets/images/bloom-logo.png?v=2">
+  <title>Facts &amp; Myths Game | Bloom Reproductive Health</title>
+  <meta name="description" content="Test your reproductive health knowledge with Bloom&rsquo;s Facts &amp; Myths educational game - warm, safe, and stigma-free learning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <img src="./assets/images/bloom-logo.png" alt="Bloom logo">
+      <span>Bloom</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open menu">&#9776;</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="features.html">Features</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a class="active" href="game.html">Game</a>
+      <a href="contact.html" class="pill">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="game-page">
+
+  <section class="page-hero container reveal">
+    <p class="breadcrumb">Home / Game</p>
+    <span class="eyebrow">Facts &amp; Myths</span>
+    <h1>How well do you know your reproductive health?</h1>
+    <p class="lead">A short educational game with reproductive health statements - decide if each one is a Fact or a Myth and see what you learn along the way.</p>
+  </section>
+
+  <section class="container">
+    <div class="game-container">
+
+      <div class="game-progress-bg">
+        <div class="game-progress-fill" id="progress-fill"></div>
+      </div>
+      <div class="game-meta">
+        <span id="progress-label">Question 1</span>
+        <span id="score-display">Score: 0</span>
+      </div>
+
+      <div id="game-main">
+        <div class="game-statement-card">
+          <p class="game-statement" id="statement">Loading&hellip;</p>
+        </div>
+
+        <div class="game-btn-row">
+          <button class="btn-fact" id="fact-btn" type="button">&#10003; Fact</button>
+          <button class="btn-myth" id="myth-btn" type="button">&#10007; Myth</button>
+        </div>
+
+        <div class="game-feedback hidden" id="feedback-box">
+          <div class="feedback-icon" id="feedback-icon">&#10003;</div>
+          <div>
+            <p class="feedback-label" id="feedback-label"></p>
+            <p class="feedback-text" id="feedback-text"></p>
+          </div>
+        </div>
+
+        <button class="btn btn-primary game-next-btn hidden" id="next-btn" type="button">Next Question &rarr;</button>
+      </div>
+
+      <div class="game-end-screen hidden" id="end-screen">
+        <span class="eyebrow">Game complete</span>
+        <p class="game-end-score" id="final-score">0 / 10</p>
+        <p class="game-end-pct" id="final-pct">0% correct</p>
+        <p class="game-end-msg" id="final-message"></p>
+        <div class="actions" style="justify-content:center">
+          <button class="btn btn-primary" id="restart-btn" type="button">Play Again</button>
+          <a class="btn btn-secondary" href="features.html">Explore Bloom</a>
+        </div>
+      </div>
+
+      <div class="game-disclaimer-box">
+        &#9877; <strong>Educational use only.</strong> This game is for learning purposes and does not replace professional medical advice. Always consult a qualified healthcare professional for health concerns.
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-legal">
+      <p class="footer-disclaimer">Bloom is an educational tool and does not provide medical diagnoses. Always consult a qualified healthcare provider for medical advice.</p>
+      <div class="footer-policy-links">
+        <a href="privacy.html">Privacy Policy</a><span>&middot;</span>
+        <a href="terms.html">Terms of Use</a><span>&middot;</span>
+        <a href="accessibility.html">Accessibility</a><span>&middot;</span>
+        <a href="cookie-policy.html">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./assets/js/game.js"></script>
+</body>
+</html>
